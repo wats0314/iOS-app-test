@@ -11,6 +11,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
+        ZStack {
+            Color(.systemTeal)
+                .edgesIgnoringSafeArea(.all)
+        
+        
         VStack(alignment: .leading, spacing: 20.0){
             Image("beach")
             .resizable()
@@ -45,7 +50,15 @@ struct ContentView: View {
             .foregroundColor(.gray)
                 .font(.caption)
         }
-        
+    .padding()
+        .background(Rectangle()
+        .cornerRadius(15)
+        .foregroundColor(.white))
+        .shadow(radius: 15)
+    .padding()
+
+
+        }
         
 }
 
