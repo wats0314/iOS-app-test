@@ -33,7 +33,9 @@ struct ContentView: View {
                 Image(systemName: "star.fill")
                 Image(systemName: "star.fill")
                 Image(systemName: "star.fill")
+                Image(systemName: "star")
                 }
+                    
             
                 Text("reviews")
                 }
@@ -52,9 +54,9 @@ struct ContentView: View {
         }
     .padding()
         .background(Rectangle()
-        .cornerRadius(15)
+        .cornerRadius(30)
         .foregroundColor(.white))
-        .shadow(radius: 15)
+        .shadow(radius: 20)
     .padding()
 
 
